@@ -20,3 +20,22 @@ Graphs:
 ![IMG_9631](https://github.com/user-attachments/assets/3d84cdf3-68f9-41dc-b0da-d22bcabdc8bf)
 Code In Linux
 ![IMG_9630](https://github.com/user-attachments/assets/aa59b4c7-be10-47d7-b8c0-4bbf3b8f1e91)
+
+Model Architecture 
+--> MobileNetV2
+--> 224x224x3 images RGB
+
+Training 
+--> Attempt 1: 15 epoches
+--> Attempt 2: 20 epoches (Fine-Tuned)
+
+
+Challenges: 
+Attempt 1 --> 
+- Model was way too slow for live video and very low accuracy on basic CNN model. Hence, in revised model I used MobileNetV2 + optimized preprocessing.
+- Overfitting, high training accuracy, low validation accuracy --> Earlystopping + dropout
+- Memory Issues --> Reduced batch size + gradient accumilation f
+
+
+Contact 
+Email: tejasbharadwaj9@tamu.edu
