@@ -12,7 +12,7 @@ import cv2
 from tensorflow.keras.optimizers import Adam
 
 # Paths for your dataset
-train_dir = "./emotion_dataset/train"  # Update this path
+train_dir = "./emotion_dataset/train"  # Update this path - can work on multiple datasets
 test_dir = "./emotion_dataset/test"    # Update this path
 
 # Image size
@@ -94,7 +94,7 @@ model.compile(
 )
 
 # Train model
-epochs = 30  # Reduced for faster training
+epochs = 30  # Faster Training
 print("Starting training...")
 history = model.fit(
     x=train_generator,
